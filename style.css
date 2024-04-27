@@ -1,0 +1,498 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --color:#fff;
+    --seccolor:rgb(12, 15, 12);
+    --fontWeight:"Merriweather", serif;
+}
+html{
+    background-color: var(--color);
+    
+}
+*{
+    /* font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal; */
+}
+.back-img img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.back-img{
+    /* background: url(https://images.pexels.com/photos/1001445/pexels-photo-1001445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat; */
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    /* background-position: 100%; */
+    /* background-repeat: no-repeat; */
+    /* transition: background-image 0.5s ease; */
+    /* position: relative; */
+    position: relative;
+    background-attachment: fixed;
+}
+
+.back{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s;
+    /* display: none; */
+    /* background-color: var(--color); */
+}
+
+.back a{
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-left: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+ul li{
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+.head-btn{
+    position: absolute;
+    left: 11rem;
+    top: 15rem;
+    width: 500px;
+    font-weight: 400;
+    font-family: var(--fontWeight);
+}
+.head-btn button{
+    margin-left: 0px;
+    background-color: var(--seccolor);
+    color: var(--color);
+    border: none;
+    padding: 8px 50px;
+    border-radius: 2px;
+}
+.head-btn p{
+    font-size: 2.5rem;
+}
+#image-grid{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* width: calc(75%); */
+    /* border: 1px solid black; */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    float:inline-end;
+    /* margin: auto; */
+    /* position: relative; */
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    /* vertical-align: middle; */
+    width: 100%;
+    cursor: pointer;
+  }
+  .testimonial{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    margin: auto;
+    padding: 100px 0px;
+    /* flex-wrap: wrap; */
+    /* width: 1500px; */
+    border: 1px solid rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    /* width: 1200px; */
+}
+.btn-handler{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.para{
+    width: 500px;
+    padding: 0 50px;
+    flex: none;
+    /* display: flex; */
+    flex-direction: column;
+   }
+.para h2{
+    padding: 50px 0;
+}
+.testimonial img{
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+}
+.background-image{
+    /* background: url(https://images.unsplash.com/photo-1544078751-58fee2d8a03b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat; */
+    background: url(https://images.pexels.com/photos/7189254/pexels-photo-7189254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.background-image h1{
+    width: 400px;
+    text-align: center;
+    color: #ffffffb2;
+}
+.detail{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.detail div h1{
+    font-size: 2rem;
+    color: #000000ce;
+    padding: 10px;
+}
+.detail button{
+    background-color: var(--seccolor);
+    color: var(--color);
+    border: none;
+    padding: 8px 50px;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.detail div{
+    padding: 100px 0;
+    width: 630px;
+    text-align: center;
+}
+.image-slider{
+    display: flex;
+    width: 100%;
+    /* flex: 25%; */
+    /* max-width: 25%; */
+    margin-top: -20px;
+    padding: 0 4px;
+    overflow-x: scroll;
+}
+.image-slider div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 37px;
+    padding: 10px;
+    
+    flex: none;
+}
+.image-slider img{
+    /* margin: 10px;
+    width:700px;
+    height: 450px;
+    background-size: cover; */
+    height: 450px;
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.image-slider img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.07);
+}
+.image-slider::-webkit-scrollbar{
+    display: none;
+}
+.page-navigation{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    color: var(--seccolor);
+}
+.thought{
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+   
+}
+.thought div p{
+    padding: 20px 0;
+    color: #0000009f;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-style: italic;
+}
+#author{
+    /* text-align: center; */
+    background-color: rgba(0, 128, 0, 0.167);
+    margin: auto;
+    width: max-content;
+    color: #0000009f;
+}
+.introduction{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,22.5rem);
+    justify-content: center;
+    grid-gap: 3rem;
+    padding: 100px;
+    flex: none;
+    
+    /* justify-content: space-around; */
+
+}
+.introduction .details{
+    width: 400px;
+    /* border: 2px solid black; */
+    /* align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* margin: 50px; */
+    /* padding: 100px 0; */
+}
+.details :first-child{
+    font-size: 14px;
+}
+.introduction p,button{
+    margin-left: 70px;
+}
+.introduction h1{
+    font-weight: 500;
+    font-family: var(--fontWeight);
+    
+  /* font-weight: 400; */
+    font-style: normal;
+}
+.introduction div button{
+    background-color: var(--seccolor);
+    color: var(--color);
+    border: none;
+    padding: 8px 50px;
+    border-radius: 2px;
+}
+.introduction .intro-img{
+    flex: none;
+    width: 25%;
+}
+.introduction img{
+    width: 350px;
+    height: 450px;
+    
+    box-shadow: -40px 40px 0px rgba(0, 0, 0, 0.055);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
+}
+@media screen and (max-width:431px) {
+    .head-btn{
+        position: absolute;
+        left: 5rem;
+        top: 35rem;
+        width: 500px;
+        font-weight: 400;
+        color: #ffffffb4
+    }
+    .detail{
+       
+        width: 160%;
+        /* margin-left: 120px; */
+    }
+    .background-image{
+        width: 160%;
+        height: 160vh;
+    }
+    .image-slider{
+        display: flex;
+        width: 160%;
+        /* flex: 25%; */
+        /* max-width: 25%; */
+        margin-top: -20px;
+        padding: 0 4px;
+        overflow-x: scroll;
+    }
+    .image-slider div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+        padding: 10px;
+        flex: none;
+    }
+    .image-slider img{
+        /* margin: 10px;
+        width:700px;
+        height: 450px;
+        background-size: cover; */
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+    }
+    .thought{
+        width: 160%;
+    }
+    .introduction{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,22.5rem);
+        justify-content: center;
+        grid-gap: 3rem;
+        padding: 100px;
+        flex: none;
+        width: 160%;
+        /* justify-content: space-around; */
+    
+    }
+    .page-navigation{
+        width: 160%;
+    }
+    .back-img{
+        width: 160%;
+        height: 160vh;
+    }
+    .back-img img{
+        height: 160vh;
+    }
+    #image-grid{
+        /* border: 1px solid black; */
+        width: 130%;
+        padding-right: 100px;
+        /* margin-left: 5px; */
+        display: flex;
+        justify-content: center;
+        /* width: 500px; */
+        /* position: absolute; */
+        display: flex;
+        /* justify-content: center; */
+        transform: translate(45%,5%);
+        /* float: right; */
+    }
+    .column{
+        max-width: 50%;
+        margin-left: 0px;
+    }
+    .testimonial{
+        /* width: 350px; */
+        /* margin: auto; */
+        padding: 20px 0;
+        width: 113%;
+        grid-template-columns: repeat(auto-fit, 40rem);
+        margin-left: 100px;
+        /* grid-gap: 5rem; */
+        flex: none;
+    }
+    .para h2{
+        padding-bottom: 30px;
+    }
+    
+    .image-slider img{
+        height: 300px;
+    }
+}
+@media screen and (max-width:376px) {
+    /* *{
+        margin-left: 0.5px;
+    } */
+
+    .detail{
+       
+        width: 180%;
+        /* margin-left: 120px; */
+    }
+    .image-slider{
+        width: 205%;
+    }
+    .thought{
+        width: 180%;
+    }
+    .introduction{
+        width: 180%;
+    }
+    .page-navigation{
+        width: 180%;
+    }
+    .background-image{
+        width: 205%;
+        height: 190vh;
+    }
+    .back-img{
+        width: 205%;
+        height: 190vh;
+    }
+    .back-img img{
+        height: 190vh;
+    }
+    #image-grid{
+        width: 225%;
+        padding-left: 200px;
+        margin: auto;
+    }
+    .testimonial{
+        width: 270px;
+        padding: 20px 0;
+        grid-template-columns: repeat(auto-fit, 40rem);
+        margin-left: 255px;
+        /* grid-gap: 5rem; */
+        flex: none;
+    }
+    }
+    .testimonial img{
+        height: 400px;
+    }
+    
+@media screen and (max-width:321px){
+    *{
+        margin-left: 0;
+    }
+    .detail{
+       
+        width: 210%;
+        margin-left: 60px;
+    }
+    .image-slider{
+        width: 250%;
+    }
+    .thought{
+        width: 210%;
+    }
+    .introduction{
+        width: 210%;
+        margin-left: 40px;
+    }
+    .page-navigation{
+        width: 210%;
+    }
+    .background-image{
+        width: 250%;
+    }
+    .back-img{
+        width: 250%;
+    }
+    #image-grid{
+        width: 280%;
+        padding-left: 350px;
+        margin: auto;
+    }
+    .testimonial{
+        width: 130%;
+        margin-left: 160px;
+    }
+    .testimonial img{
+        height: 400px;
+    }
+}
