@@ -344,7 +344,11 @@ ul li{
         height: 300px;
     }
 }
-@media screen and (max-width:376px) {
+@media screen and (max-width:1025px) {
+    .image-slider{
+        width: 100%;
+    }
+@media screen and (max-width:386px) {
     .detail{
         width: 180%;
     }
