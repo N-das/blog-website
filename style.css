@@ -278,6 +278,7 @@ ul li{
         margin-top: -20px;
         padding: 0 4px;
         overflow-x: scroll;
+         transition: all 0.5s;
     }
     .image-slider div{
         width: 100%;
@@ -286,6 +287,7 @@ ul li{
         grid-gap: 30px;
         padding: 10px;
         flex: none;
+         transition: all 0.5s;
     }
     .image-slider img{
         width: 100%;
