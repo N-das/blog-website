@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("next-btn");
   const navbar = document.getElementById("navbar");
 
+  // To appear navbar background color white after scroll of 700
   window.addEventListener("scroll", () => {
     if (window.scrollY > 700) {
       navbar.classList.remove("bg-transparent");
@@ -14,11 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // To scroll image slider at y-axis
   imageScroll.addEventListener("wheel", (e) => {
     e.preventDefault();
     imageScroll.scrollLeft += e.deltaY;
   });
 
+  // nextbtn handler for image slider to scroll at +1050 from current position
   nextBtn.addEventListener("click", (e) => {
     e.preventDefault();
     imageScroll.style.scrollBehavior = "smooth";
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Right Button clicked");
   });
 
+   // backbtn handler for image slider to scroll at -1050 from current position
   backBtn.addEventListener("click", (e) => {
     e.preventDefault();
     imageScroll.style.scrollBehavior = "smooth";
